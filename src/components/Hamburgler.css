@@ -18,11 +18,11 @@
 }
 
 svg.hamburgler {
-  width: 50px;
+  width: 55px;
 }
 
 svg.hamburgler path {
-  fill: rgb(241, 255, 38);
+  fill: rgb(171, 16, 16);
   transform-origin: 50% 50%;
 }
 
@@ -45,4 +45,5 @@ svg.hamburgler path {
 .hamburgler {
   justify-content: flex-end;
   padding: 5px;
+  background-color: #002060;
 }

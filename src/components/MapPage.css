@@ -6,20 +6,18 @@
 }
 
 .map-page {
-  height:100%;
-  overflow:hidden; 
+  height: 100%;
+  overflow: hidden;
   display: flex;
-   flex-direction: column;
-    justify-content: flex-end ;
-    align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .mapboxgl-marker path {
- fill: #0d43ede6;
+  fill: #002060;
 }
 .mapboxgl-marker svg {
- height: 47px;
- width: 47px;
+  height: 47px;
+  width: 47px;
 }
-
-

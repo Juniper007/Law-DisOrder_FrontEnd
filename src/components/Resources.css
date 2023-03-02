@@ -6,15 +6,17 @@
   grid-row: 2/4;
   display: grid;
   grid-template-rows: auto auto;
+  background-color: #002060;
 }
 
 .resource-header {
   grid-row: 1;
   z-index: 6;
-  background-color: white;
+  background-color: #002060;
   overflow: hidden;
-  padding: 10px;
+  padding: 35px;
   align-items: center;
+  color: white;
 }
 
 iframe {
@@ -35,6 +37,6 @@ iframe {
 
 @media screen and (min-height: 813px) {
   .krang {
-    height: 80%
+    height: 80%;
   }
 }

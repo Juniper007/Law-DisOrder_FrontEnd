@@ -1,5 +1,5 @@
-import React from "react";
-import Typography from "@mui/material/Typography";
+import React from 'react'
+import Typography from '@mui/material/Typography'
 
 function ResourcesHeader() {
   return (
@@ -10,12 +10,13 @@ function ResourcesHeader() {
             Additional Resources
           </Typography>
           <Typography variant="subtitle2" sx={{ mt: 1 }} gutterbottom>
-            The Resources below may help keep you safe.{" "}
+            Reach Out If You Or Someone You Know Needs Help, There Are Plenty Of
+            People Who Want To Support Those Along There Journey To Recovery.{' '}
           </Typography>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default ResourcesHeader;
+export default ResourcesHeader

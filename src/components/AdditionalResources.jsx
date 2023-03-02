@@ -1,6 +1,6 @@
-import React from "react";
-import ResourcesHeader from "./ResourcesHeader";
-import "./Resources.css";
+import React from 'react'
+import ResourcesHeader from './ResourcesHeader'
+import './Resources.css'
 
 function AdditionalResources() {
   return (
@@ -8,12 +8,12 @@ function AdditionalResources() {
       <ResourcesHeader />
       <div className="krang">
         <iframe
-          title="mypage"
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnKwPx18oS1Em_FHu6-xa8_wWGPLFwsBw_LPAY26vbEdumipcSVNshEtfctCQgiw/pubhtml?widget=true&amp;headers=false"
+          title="additional-resources"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTHonGhuR20X7dAbY6nv21nMg6i1sLkPAncCPiloQXgLfmOVVfXFRqtjVjyt3-H5lNd8Z5yooA6-Y_G/pubhtml?widget=true&amp;headers=false"
         ></iframe>
       </div>
     </div>
-  );
+  )
 }
 
-export default AdditionalResources;
+export default AdditionalResources

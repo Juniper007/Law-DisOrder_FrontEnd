@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import {Box, BottomNavigation, BottomNavigationAction} from "@mui/material";
-import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
-import PropTypes from "prop-types";
+import React, { useState } from 'react'
+import { Box, BottomNavigation, BottomNavigationAction } from '@mui/material'
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
+import PropTypes from 'prop-types'
 
-import "./FilterBar.css";
+import './FilterBar.css'
 
 function Item(props) {
-  const { sx, ...other } = props;
+  const { sx, ...other } = props
   return (
     <Box
       sx={{
@@ -15,44 +15,44 @@ function Item(props) {
         m: 1,
         bgcolor: `rgb(213,0,0)`,
         background:
-          "linear-gradient(90deg, rgba(213,0,0,1) 0%, rgba(250,250,0,1) 100%)",
+          'linear-gradient(90deg, rgba(237,67,67,1) 0%, rgba(0,32,96,1) 100%)',
         color: (theme) =>
-          theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-        border: "1px solid",
+          theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
+        border: '1px solid',
         borderColor: (theme) =>
-          theme.palette.mode === "dark" ? "grey.800" : "grey.300",
+          theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
         borderRadius: 2,
-        fontSize: "0.875rem",
-        fontWeight: "700",
+        fontSize: '0.875rem',
+        fontWeight: '700',
         ...sx,
       }}
       {...other}
     />
-  );
+  )
 }
 
 Item.propTypes = {
   sx: PropTypes.oneOfType([
     PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool])
+      PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool]),
     ),
     PropTypes.func,
     PropTypes.object,
   ]),
-};
+}
 
 function FilterBar(props) {
-  const { menuOpen, setMenuOpen } = props;
-  const [value, setValue] = useState(0);
+  const { menuOpen, setMenuOpen } = props
+  const [value, setValue] = useState(0)
 
   return (
     <Box
       sx={{
         boxShadow: 1,
-        display: "flex",
-        flexDirection: "row-reverse",
-        justifyContent: "space-between",
-        bgColor: "pink",
+        display: 'flex',
+        flexDirection: 'row-reverse',
+        justifyContent: 'space-between',
+        bgColor: 'pink',
       }}
       id="filterbar"
       variant="outlined"
@@ -64,11 +64,11 @@ function FilterBar(props) {
         showLabels
         value={value}
         onChange={(event, newValue) => {
-          setValue(newValue);
+          setValue(newValue)
         }}
       >
         <Box className="fake-container">
-          <Item sx={{ width: 100, margin: "6px", padding: "5px" }}></Item>
+          <Item sx={{ width: 100, margin: '6px', padding: '5px' }}></Item>
           <span className="fake-caption">High - Legend - Low</span>
         </Box>
 
@@ -86,7 +86,7 @@ function FilterBar(props) {
         )}
       </BottomNavigation>
     </Box>
-  );
+  )
 }
 
-export default FilterBar;
+export default FilterBar
