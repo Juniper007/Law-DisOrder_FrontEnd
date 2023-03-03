@@ -1,4 +1,4 @@
-Forked From Maggies Repo
+Forked From Maggie's Repo (Yay! It works)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
